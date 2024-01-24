@@ -14,5 +14,8 @@
   "type": "module",
   "devDependencies": {
     "prettier": "^3.2.4"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   }
 }
