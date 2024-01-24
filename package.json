@@ -1,11 +1,18 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "My first project with console games",
+  "description": "The console games",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anastasia Surkova",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^3.2.4"
+  }
 }
