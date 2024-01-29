@@ -34,9 +34,10 @@ const getInfoForRound = () => {
   const operand1 = getRandomInteger();
   const operand2 = getRandomInteger();
   const mathSymbol = getRandomMathSymbol();
-  const expression = `${operand1} ${mathSymbol} ${operand2}`;
 
+  const expression = `${operand1} ${mathSymbol} ${operand2}`;
   const correctAnswer = getCorrectAnswer(operand1, operand2, mathSymbol);
+
   return [expression, correctAnswer];
 };
 
