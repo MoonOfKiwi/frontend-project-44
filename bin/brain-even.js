@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import startGame from '../src/even.js';
+import { getRules, getInfoForRound } from '../src/games/even.js';
+import startGame from '../src/index.js';
 
-startGame();
+startGame(getRules(), getInfoForRound);

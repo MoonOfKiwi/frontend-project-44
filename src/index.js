@@ -1,14 +1,6 @@
 import readlineSync from 'readline-sync';
 import askUsername from './cli.js';
 
-const getRandomInteger = () => {
-  const min = -100000;
-  const max = 100000;
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
-
-const getCorrectAnswer = (number) => (number % 2 === 0 ? 'yes' : 'no');
-
 const printRoundResult = (isAnswerCorrect, username, userAnswer, correctAnswer) => {
   if (isAnswerCorrect) {
     console.log('Correct!');
@@ -17,18 +9,17 @@ const printRoundResult = (isAnswerCorrect, username, userAnswer, correctAnswer) 
   }
 };
 
-const startGame = () => {
+const startGame = (getRules, getInfoForRound) => {
   const roundsCount = 3;
 
   console.log('Welcome to the Brain Games!');
   const username = askUsername();
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log(getRules);
 
-  for (let currentAttempt = 0; currentAttempt < roundsCount; currentAttempt += 1) {
-    const number = getRandomInteger();
-    const correctAnswer = getCorrectAnswer(number);
+  for (let currentAttempt = 1; currentAttempt <= roundsCount; currentAttempt += 1) {
+    const [question, correctAnswer] = getInfoForRound();
 
-    console.log(`Question: ${number}`);
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     const isAnswerCorrect = (userAnswer === correctAnswer);
