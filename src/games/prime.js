@@ -4,6 +4,7 @@ const getRandomInteger = (min, max) => (Math.floor(Math.random() * (max - min + 
 
 const getCorrectAnswer = (number) => {
   if (number <= 1) return 'no';
+  if (number === 2) return 'yes';
 
   const maxDivider = Math.sqrt(number);
 
