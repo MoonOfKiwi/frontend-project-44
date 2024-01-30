@@ -5,9 +5,9 @@ const getRandomInteger = (min, max) => (Math.floor(Math.random() * (max - min + 
 const getCorrectAnswer = (number) => {
   if (number <= 1) return 'no';
 
-  const limit = Math.ceil(Math.sqrt(number));
+  const maxDivider = Math.ceil(Math.sqrt(number));
 
-  for (let divider = 2; divider <= limit; divider += 1) {
+  for (let divider = 2; divider <= maxDivider; divider += 1) {
     if (number % divider === 0) {
       return 'no';
     }
