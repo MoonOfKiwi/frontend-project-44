@@ -1,10 +1,6 @@
 const getRules = () => ('Find the greatest common divisor of given numbers.');
 
-const getRandomInteger = () => {
-  const min = 1;
-  const max = 100;
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
+const getRandomInteger = (min, max) => (Math.floor(Math.random() * (max - min + 1)) + min);
 
 const getCorrectAnswer = (randomNum1, randomNum2) => {
   let number1 = randomNum1;
@@ -24,8 +20,8 @@ const getCorrectAnswer = (randomNum1, randomNum2) => {
 };
 
 const getInfoForRound = () => {
-  const randomNum1 = getRandomInteger();
-  const randomNum2 = getRandomInteger();
+  const randomNum1 = getRandomInteger(0, 100);
+  const randomNum2 = getRandomInteger(0, 100);
 
   const statement = `${randomNum1} ${randomNum2}`;
   const correctAnswer = getCorrectAnswer(randomNum1, randomNum2);

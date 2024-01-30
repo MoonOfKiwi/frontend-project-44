@@ -1,10 +1,6 @@
 const getRules = () => ('What is the result of the expression?');
 
-const getRandomInteger = () => {
-  const min = -10;
-  const max = 10;
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
+const getRandomInteger = (min, max) => (Math.floor(Math.random() * (max - min + 1)) + min);
 
 const getRandomMathSymbol = () => {
   const mathSymbols = ['+', '-', '*'];
@@ -31,8 +27,8 @@ const getCorrectAnswer = (operand1, operand2, symbol) => {
 };
 
 const getInfoForRound = () => {
-  const operand1 = getRandomInteger();
-  const operand2 = getRandomInteger();
+  const operand1 = getRandomInteger(0, 10);
+  const operand2 = getRandomInteger(0, 10);
   const mathSymbol = getRandomMathSymbol();
 
   const expression = `${operand1} ${mathSymbol} ${operand2}`;
