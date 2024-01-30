@@ -5,7 +5,7 @@ const getRandomInteger = (min, max) => (Math.floor(Math.random() * (max - min + 
 const getCorrectAnswer = (number) => {
   if (number <= 1) return 'no';
 
-  const maxDivider = Math.ceil(Math.sqrt(number));
+  const maxDivider = Math.sqrt(number);
 
   for (let divider = 2; divider <= maxDivider; divider += 1) {
     if (number % divider === 0) {
