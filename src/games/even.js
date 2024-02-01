@@ -1,6 +1,6 @@
-const getRules = () => ('Answer "yes" if the number is even, otherwise answer "no".');
+import getRandomInteger from '../randomNumGenerator.js';
 
-const getRandomInteger = (min, max) => (Math.floor(Math.random() * (max - min + 1)) + min);
+const Rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const getCorrectAnswer = (number) => (number % 2 === 0 ? 'yes' : 'no');
 
@@ -10,4 +10,4 @@ const getInfoForRound = () => {
   return [number, correctAnswer];
 };
 
-export { getRules, getInfoForRound };
+export { Rules, getInfoForRound };

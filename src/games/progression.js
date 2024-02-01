@@ -1,6 +1,6 @@
-const getRules = () => ('What number is missing in the progression?');
+import getRandomInteger from '../randomNumGenerator.js';
 
-const getRandomInteger = (min, max) => (Math.floor(Math.random() * (max - min + 1)) + min);
+const Rules = 'What number is missing in the progression?';
 
 const getProgression = (start, difference, length) => {
   const progression = [];
@@ -44,4 +44,4 @@ const getInfoForRound = () => {
   return infoForRound;
 };
 
-export { getRules, getInfoForRound };
+export { Rules, getInfoForRound };

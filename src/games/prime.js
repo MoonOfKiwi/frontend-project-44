@@ -1,6 +1,6 @@
-const getRules = () => ('Answer "yes" if given number is prime. Otherwise answer "no".');
+import getRandomInteger from '../randomNumGenerator.js';
 
-const getRandomInteger = (min, max) => (Math.floor(Math.random() * (max - min + 1)) + min);
+const Rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const getCorrectAnswer = (number) => {
   if (number <= 1) return 'no';
@@ -23,4 +23,4 @@ const getInfoForRound = () => {
   return [number, correctAnswer];
 };
 
-export { getRules, getInfoForRound };
+export { Rules, getInfoForRound };

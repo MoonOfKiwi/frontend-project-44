@@ -1,6 +1,6 @@
-const getRules = () => ('Find the greatest common divisor of given numbers.');
+import getRandomInteger from '../randomNumGenerator.js';
 
-const getRandomInteger = (min, max) => (Math.floor(Math.random() * (max - min + 1)) + min);
+const Rules = 'Find the greatest common divisor of given numbers.';
 
 const getCorrectAnswer = (randomNum1, randomNum2) => {
   let number1 = randomNum1;
@@ -20,12 +20,12 @@ const getCorrectAnswer = (randomNum1, randomNum2) => {
 };
 
 const getInfoForRound = () => {
-  const randomNum1 = getRandomInteger(0, 100);
-  const randomNum2 = getRandomInteger(0, 100);
+  const randomNum1 = getRandomInteger(0, 50);
+  const randomNum2 = getRandomInteger(0, 50);
 
   const statement = `${randomNum1} ${randomNum2}`;
   const correctAnswer = getCorrectAnswer(randomNum1, randomNum2);
   return [statement, correctAnswer];
 };
 
-export { getRules, getInfoForRound };
+export { Rules, getInfoForRound };

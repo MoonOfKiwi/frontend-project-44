@@ -1,6 +1,6 @@
-const getRules = () => ('What is the result of the expression?');
+import getRandomInteger from '../randomNumGenerator.js';
 
-const getRandomInteger = (min, max) => (Math.floor(Math.random() * (max - min + 1)) + min);
+const Rules = 'What is the result of the expression?';
 
 const getRandomMathSymbol = () => {
   const mathSymbols = ['+', '-', '*'];
@@ -37,4 +37,4 @@ const getInfoForRound = () => {
   return [expression, correctAnswer];
 };
 
-export { getRules, getInfoForRound };
+export { Rules, getInfoForRound };
