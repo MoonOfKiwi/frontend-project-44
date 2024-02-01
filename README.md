@@ -16,7 +16,7 @@ make install
 
 ## Run games
 
-### Game *"Brain-even"*
+### Game "*Brain-even*"
 
 **Description:** 
 A random number is shown to the user. The user needs to answer "*yes*" if the number is even, or "*no*" if it is odd.
@@ -27,7 +27,7 @@ brain-even
 ```
 [![asciicast](https://asciinema.org/a/ISyuHYOwoj8w1ljotpTe8IlLS.svg)](https://asciinema.org/a/ISyuHYOwoj8w1ljotpTe8IlLS)
 
-### Game *Brain-calc*
+### Game "*Brain-calc*"
 
 **Description:** 
 The user is shown a random mathematical expression, which needs to be calculated and written down the correct answer.
@@ -38,7 +38,7 @@ brain-calc
 ```
 [![asciicast](https://asciinema.org/a/y0erYYU2Kfgpft7PglVymYDRa.svg)](https://asciinema.org/a/y0erYYU2Kfgpft7PglVymYDRa)
 
-### Game *Brain-gcd*
+### Game "*Brain-gcd*"
 
 **Description:** 
 The user is shown two random numbers. The user must calculate and enter the largest common divisor of these numbers.
@@ -49,7 +49,7 @@ brain-gcd
 ```
 [![asciicast](https://asciinema.org/a/hPJeNwyPT6fY5lmbwFwEt8O1E.svg)](https://asciinema.org/a/hPJeNwyPT6fY5lmbwFwEt8O1E)
 
-### Game *Brain-progression*
+### Game "*Brain-progression*"
 
 **Description:** 
 The user is shown an arithmetic progression. There are one number, which is replaced by two dots in it. The user must determine this number.
@@ -60,7 +60,7 @@ brain-progression
 ```
 [![asciicast](https://asciinema.org/a/BkghlP4cbx5kxhLFYC4YMbCze.svg)](https://asciinema.org/a/BkghlP4cbx5kxhLFYC4YMbCze)
 
-### Game *Brain-prime*
+### Game "*Brain-prime*"
 
 **Description:**
 A random number is shown to the user. The user needs to answer "*yes*" if the number is prime, or "*no*" if it's not.
