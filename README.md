@@ -5,7 +5,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/224c7663dc40f034bdab/maintainability)](https://codeclimate.com/github/MoonOfKiwi/frontend-project-44/maintainability)
 
 ## Description
-"Brain-games" consists of 5 console games to train your brain. Each game asks 3 questions that need to be answered correctly. If you have answered all the questions, it is considered that you have passed the game. In case of an incorrect answer, the game will end and you will be asked to try again.
+"Brain-games" consists of 5 console games to train brain. Each game asks 3 questions that should be answered correctly. If the user has answered all the questions, the game is completed. In case of an incorrect answer, the game will end and the user will be asked to try again.
 
 ### Setup
 
@@ -19,7 +19,7 @@ make install
 ### Game "*Brain-even*"
 
 **Description:** 
-A random number is shown to the user. The user needs to answer "*yes*" if the number is even, or "*no*" if it is odd.
+A random number is shown to the user. The user should answer "*yes*" if the number is even, or "*no*" if it's odd.
 
 **Run:**
 ```bash
@@ -30,7 +30,7 @@ brain-even
 ### Game "*Brain-calc*"
 
 **Description:** 
-The user is shown a random mathematical expression, which needs to be calculated and written down the correct answer.
+A random mathematical expression is shown to the user. The user should calculate and enter the result.
 
 **Run:**
 ```bash
@@ -41,7 +41,7 @@ brain-calc
 ### Game "*Brain-gcd*"
 
 **Description:** 
-The user is shown two random numbers. The user must calculate and enter the greatest common divisor of these numbers.
+Two random numbers are shown to the user. The user should calculate and enter the greatest common divisor of these numbers.
 
 **Run:**
 ```bash
@@ -52,7 +52,7 @@ brain-gcd
 ### Game "*Brain-progression*"
 
 **Description:** 
-The user is shown an arithmetic progression. There are one number, which is replaced by two dots in it. The user must determine this number.
+An arithmetic progression is shown to the user. There are one number, which is replaced by two dots in it. The user should determine this number.
 
 **Run:**
 ```bash
@@ -63,7 +63,7 @@ brain-progression
 ### Game "*Brain-prime*"
 
 **Description:**
-A random number is shown to the user. The user needs to answer "*yes*" if the number is prime, or "*no*" if it's not.
+A number is shown to the user. The user should answer "*yes*" if the number is prime, or "*no*" if it's not.
 
 **Run:**
 ```bash
