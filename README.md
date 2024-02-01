@@ -7,6 +7,9 @@
 ## Description
 "Brain-games" consists of 5 console games to train brain. Each game asks 3 questions that should be answered correctly. If the user has answered all the questions, the game is completed. In case of an incorrect answer, the game will end and the user will be asked to try again.
 
+### Requirements
+[Node.js](https://nodejs.org/en/download)
+
 ### Setup
 
 ```bash
