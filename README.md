@@ -41,7 +41,7 @@ brain-calc
 ### Game "*Brain-gcd*"
 
 **Description:** 
-The user is shown two random numbers. The user must calculate and enter the largest common divisor of these numbers.
+The user is shown two random numbers. The user must calculate and enter the greatest common divisor of these numbers.
 
 **Run:**
 ```bash
