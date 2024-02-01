@@ -18,7 +18,8 @@ make install
 
 ### *Brain-even*
 
-**Description:** A random number is shown to the user. And he needs to answer "*yes*" if the number is even, or "*no*" if it is odd.
+**Description:** 
+A random number is shown to the user. The user needs to answer "*yes*" if the number is even, or "*no*" if it is odd.
 
 **Run:**
 ```bash
@@ -28,7 +29,8 @@ brain-even
 
 ### *Brain-calc*
 
-**Description:** The user is shown a random mathematical expression, which needs to be calculated and written down the correct answer.
+**Description:** 
+The user is shown a random mathematical expression, which needs to be calculated and written down the correct answer.
 
 **Run:**
 ```bash
@@ -38,7 +40,8 @@ brain-calc
 
 ### *Brain-gcd*
 
-**Description:** The user is shown two random numbers. The user must calculate and enter the largest common divisor of these numbers.
+**Description:** 
+The user is shown two random numbers. The user must calculate and enter the largest common divisor of these numbers.
 
 **Run:**
 ```bash
@@ -48,7 +51,8 @@ brain-gcd
 
 ### *Brain-progression*
 
-**Description:** The user is shown an arithmetic progression. There are one number, which is replaced by two dots in it. The player must determine this number.
+**Description:** 
+The user is shown an arithmetic progression. There are one number, which is replaced by two dots in it. The user must determine this number.
 
 **Run:**
 ```bash
@@ -58,10 +62,11 @@ brain-progression
 
 ### *Brain-prime*
 
-**Description:** A random number is shown to the user. The player needs to answer "*yes*" if the number is prime, or "*no*" if it's not.
+**Description:**
+A random number is shown to the user. The user needs to answer "*yes*" if the number is prime, or "*no*" if it's not.
 
 **Run:**
 ```bash
 brain-prime
 ```
-[![asciicast](https://asciinema.org/a/kyb3LTU5Wtzb1HjHz6TpbRYih.svg)](https://asciinema.org/a/kyb3LTU5Wtzb1HjHz6TpbRYih)
+[![asciicast](https://asciinema.org/a/634549.svg)](https://asciinema.org/a/634549)
