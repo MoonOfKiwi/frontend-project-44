@@ -1,6 +1,7 @@
 import getRandomInteger from '../randomNumGenerator.js';
+import startGame from '../index.js';
 
-const Rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+const RULES = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const getCorrectAnswer = (number) => (number % 2 === 0 ? 'yes' : 'no');
 
@@ -10,4 +11,8 @@ const getInfoForRound = () => {
   return [number, correctAnswer];
 };
 
-export { Rules, getInfoForRound };
+const startBrainEven = () => {
+  startGame(RULES, getInfoForRound);
+};
+
+export default startBrainEven;

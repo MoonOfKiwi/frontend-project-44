@@ -1,6 +1,7 @@
 import getRandomInteger from '../randomNumGenerator.js';
+import startGame from '../index.js';
 
-const Rules = 'What is the result of the expression?';
+const RULES = 'What is the result of the expression?';
 
 const getRandomMathSymbol = () => {
   const mathSymbols = ['+', '-', '*'];
@@ -37,4 +38,8 @@ const getInfoForRound = () => {
   return [expression, correctAnswer];
 };
 
-export { Rules, getInfoForRound };
+const startBrainCalc = () => {
+  startGame(RULES, getInfoForRound);
+};
+
+export default startBrainCalc;

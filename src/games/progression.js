@@ -1,6 +1,7 @@
 import getRandomInteger from '../randomNumGenerator.js';
+import startGame from '../index.js';
 
-const Rules = 'What number is missing in the progression?';
+const RULES = 'What number is missing in the progression?';
 
 const getProgression = (start, difference, length) => {
   const progression = [];
@@ -44,4 +45,8 @@ const getInfoForRound = () => {
   return infoForRound;
 };
 
-export { Rules, getInfoForRound };
+const startBrainProgression = () => {
+  startGame(RULES, getInfoForRound);
+};
+
+export default startBrainProgression;
