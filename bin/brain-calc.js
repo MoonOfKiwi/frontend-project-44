@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { Rules, getInfoForRound } from '../src/games/calc.js';
-import startGame from '../src/index.js';
+import startBrainCalc from '../src/games/calc.js';
 
-startGame(Rules, getInfoForRound);
+startBrainCalc();

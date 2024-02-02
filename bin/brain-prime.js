@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { Rules, getInfoForRound } from '../src/games/prime.js';
-import startGame from '../src/index.js';
+import startBrainPrime from '../src/games/prime.js';
 
-startGame(Rules, getInfoForRound);
+startBrainPrime();
